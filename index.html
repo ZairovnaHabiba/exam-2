@@ -5,8 +5,406 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam-2</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/col.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 </head>
 <body>
-    
+    <!-- Header Section -->
+
+    <header class="site-header header">
+        <div class="container">
+            <div class="header__inner row between middle">
+                <a href="#" class="header__logo">
+                    <img src="images/logo.png" alt="logo" width="111" height="36">
+                </a>
+                <nav class="header__nav row middle">
+                    <a href="tel:44-123-456-7890" class="header__phone">
+                        CALL US +44 123 456 7890
+                    </a>
+                    <button id="headerBtn" class="header__btn">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal Section  -->
+
+    <div id="modalBox" class="modal">
+        <div class="modal__inner"></div>
+        <div class="modal__nav">
+            <button id="closeBtn" class="modal__close">
+                <i class='bx bx-x'></i>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        home
+                    </a>
+                </li> <br>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        about
+                    </a>
+                </li> 
+                <br>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        services
+                    </a>
+                </li> 
+                <br>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        portfolio
+                    </a>
+                </li> <br>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        blog
+                    </a>
+                </li>
+                 <br>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">
+                        contact
+                    </a>
+                </li>
+            </ul>
+            <ul class="socials">
+                <li class="socials__item">
+                    <a target="_blank" href="https://www.facebook.com/" class="socials__link">
+                        <i class='bx bxl-facebook'></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a target="_blank" href="http://www.twitter.com/" class="socials__link">
+                        <i class='bx bxl-twitter'></i> 
+                        Twitter
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a target="_blank" href="https://www.instagram.com/" class="socials__link">
+                        <i class='bx bxl-instagram'></i> 
+                        Instagram
+                    </a>
+                </li>
+                <li class="socials__item">
+                    <a target="_blank" href="https://dribbble.com/" class="socials__link">
+                        <i class='bx bxl-dribbble'></i> 
+                        Dribble
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section id="hero1" class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__btns">
+                    <button id="next" class="hero__btn active">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                    <button class="hero__btn">
+                        <i class='bx bx-left-arrow-alt'></i>
+                    </button>
+                </div>
+                <div class="hero__content row middle">
+                    <h3 class="hero__num">01 </h3>
+                    <div class="hero__txt">
+                        <div class="hero__title"> 
+                            <h2 class="h__title">
+                                De Wendell Burnette 
+                            </h2>  
+                            <span class="title__cover"></span>
+                        </div>
+                        <div class="hero__linkbox link">
+                            <a href="#" class="hero__link">
+                                Explore Project 
+                            </a>
+                            <div class="link__box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+
+    <section class="story">
+        <div class="container">
+            <div class="story__inner row middle between">
+                <div class="story__content row middle">
+                    <div class="brackets">
+                        <span>[</span>
+                        <span>]</span>
+                    </div>
+                    <h3 class="story__num">28</h3>
+                    <p class="story__par">Years experience working</p>
+                </div>
+                <div class="story__content">
+                    <p class="story__year">SINCE 1992</p>
+                    <p class="story__text">An architectural company based in United kingdom</p>
+                </div>
+                <div class="story__content">
+                    <p class="story__par">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been standard dummy text ever since ipsum been the industry lorem ipsum has been lorem ipsums dolor.</p>
+                    <a href="#" class="story__link">ABOUT COMPANY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Designs -->
+
+    <section class="designs">
+        <div class="container">
+            <ul class="designs__list row between">
+                <li class="designs__item">
+                    <h3 class="design__list__title">
+                        Architecture design
+                    </h3>
+                    <div class="design__img design__img1"></div>
+                    <div class="img-cover"></div>
+                    <button class="design__btn">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                    <div class="design__hover__box hoverbox">
+                        <h4 class="hoverbox__title">
+                            Lorem ipsum is simply dummy text of the printing and typesetting.
+                        </h4>
+                        <a href="#" class="hoverbox__link">
+                            See portfolio 
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="designs__item">
+                    <div class="design__img design__img2"></div>
+                    <div class="img-cover"></div>
+                    <h3 class="design__list__title">
+                        Architecture design
+                    </h3>
+                    <button class="design__btn">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                    <div class="design__hover__box hoverbox">
+                        <h4 class="hoverbox__title">
+                            Lorem ipsum is simply dummy text of the printing and typesetting.
+                        </h4>
+                        <a href="#" class="hoverbox__link">
+                            See portfolio 
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="designs__item">
+                    <div class="design__img design__img3"></div>
+                    <div class="img-cover"></div>
+                    <h3 class="design__list__title">
+                        Furnitures design
+                    </h3>
+                    <button class="design__btn">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                    <div class="design__hover__box hoverbox">
+                        <h4 class="hoverbox__title">
+                            Lorem ipsum is simply dummy text of the printing and typesetting.
+                        </h4>
+                        <a href="#" class="hoverbox__link">
+                            See portfolio 
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="designs__item">
+                    <div class="design__img design__img4"></div>
+                    <div class="img-cover"></div>
+                    <h3 class="design__list__title">
+                        Landscape design
+                    </h3>
+                    <button class="design__btn">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </button>
+                    <div class="design__hover__box hoverbox">
+                        <h4 class="hoverbox__title">
+                            Lorem ipsum is simply dummy text of the printing and typesetting.
+                        </h4>
+                        <a href="#" class="hoverbox__link">
+                            See portfolio 
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Spaces  Section-->
+
+    <section class="spaces">
+        <div class="container">
+            <div class="spaces__inner row between">
+                <p class="spaces_text">
+                    We are passionate knowing that people work, play and inhabit the spaces and places.
+                </p>
+                <div class="spaces__content">
+                    <h4 class="spaces__title">OWNER MANAGED</h4>
+                    <p class="spaces__p">Lorem ipsum is simply dummy text of the printing and lorem ipsum has been.</p>
+                </div>
+                <div class="spaces__content">
+                    <h4 class="spaces__title">EXPECT CREATIVITY</h4>
+                    <p class="spaces__p">Lorem ipsum is simply dummy text of the printing and lorem ipsum has been.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+
+    <section class="video">
+        <div class="container">
+            <div class="video__inner">
+                <div class="video__wrapper"></div>
+                <div class="video__btn"><i class='bx bx-play' ></i></div>
+                <h3 class="video__leader">
+                    We are the leader in the <span>architectural</span> 
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners  Section-->
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__inner">
+                <ul class="partners__list row evenly">
+                    <li class="partners__item">
+                        <img src="images/forecastr-img.png" alt="forecastr-img">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/growtify-img.png" alt="growtify-img">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/techbox-img.png" alt="techbox-img">
+                    </li>
+                    <li class="partners__item">
+                        <img src="images/smarthome-img.png" alt="smarthome-img">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  
+  <!-- Map -->
+  
+    <section class="map">
+        <div class="container">
+            <div class="map__inner row between">
+                <div class="map__world">World</div>
+                <img src="images/map-img.png" alt="map" width="457" height="257">
+                <div class="map__content">
+                    <h3 class="map__title">We have offices all around the world</h3>
+                    <p class="map__text">Lorem ipsum, dolor sit amet elit. Pariatur quasi earum ullam eius culpa itaque dolore.</p>
+                    <a href="#" class="map__link">Get n touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!-- Blog -->
+  
+    <section class="blog">
+        <div class="container">
+      <div class="work__start">
+        <div class="work__line1"></div>
+        <p class="work__p">LATEST BLOG</p>
+        <div class="work__line2"></div>
+      </div>
+      <ul class="blog__list row between">
+        <li class="blog__item">
+          <div class="blog__imgbox">
+            <img src="images/blogs-1.webp" alt="blog-img">
+          </div>
+          <div class="blog__content">
+            <p class="blog__creative">CEATIVE</p>
+            <p class="blog__date">13 FEBRUARY 2021</p>
+            <div class="blog__text">Bad design is smoke, while good design is a mirror</div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__imgbox">
+            <img src="images/blogs-2.webp" alt="blog-img">
+          </div>
+          <div class="blog__content">
+            <p class="blog__creative">CEATIVE</p>
+            <p class="blog__date">13 FEBRUARY 2021</p>
+            <div class="blog__text">Everything designed things are designed well</div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__imgbox">
+            <img src="images/blogs-3.webp" alt="blog-img">
+          </div>
+          <div class="blog__content">
+            <p class="blog__creative">CEATIVE</p>
+            <p class="blog__date">13 FEBRUARY 2021</p>
+            <div class="blog__text">People ignore design that ignores people</div>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__imgbox">
+            <img src="images/blogs-4.webp" alt="blog-img">
+          </div>
+          <div class="blog__content">
+            <p class="blog__creative">CEATIVE</p>
+            <p class="blog__date">13 FEBRUARY 2021</p>
+            <div class="blog__text">Reason and judgment are the qualities of a leader</div>
+          </div>
+        </li>
+      </ul>
+      <p class="work__txt">ARE YOU READY TO WORK WITH US? <a class="spanlink" href="#"> <span>START A PROJECT</span>  </a> </p>
+    </div>
+  </section>
+  
+  <!-- Go Top -->
+  <a href="#" id="goTop" class="go-top">
+    <i class='bx bx-up-arrow-alt' ></i>
+  </a>
+  <!-- Footer Part -->
+  
+    <footer class="site-footer footer">
+        <div class="container">
+            <div class="footer__inner row between middle">
+                <a href="#" class="footer__logo">
+                    <img src="images/logo.png" alt="logo" width="111" height="36">
+                </a>
+                <p class="footer__text">+1 234 567 8910•27 EDEN WALK EDEN CENTRE, PARIS, FRANCE•INFO@YOURDOMAIN.COM</p>
+                <ul class="socials__list row middle">
+                    <li class="footer__item"><a target="_blank" href="https://www.facebook.com/" class="footer__link"><i class='bx bxl-facebook'></i> </a></li>
+                    <li class="footer__item"><a target="_blank" href="http://www.twitter.com/" class="footer__link"><i class='bx bxl-twitter' ></i> </a></li>
+                    <li class="footer__item"><a target="_blank" href="https://www.instagram.com/" class="footer__link"><i class='bx bxl-instagram' ></i> </a></li>
+                    <li class="footer__item"><a target="_blank" href="https://dribbble.com/" class="footer__link"><i class='bx bxl-dribbble' ></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+  
+    <script src="js/main.js"></script>
 </body>
 </html>
